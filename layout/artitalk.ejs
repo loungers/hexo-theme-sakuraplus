@@ -1,0 +1,99 @@
+<div class="pattern-center-blank">
+</div>
+<div class="pattern-center ">
+  <div class="pattern-attachment-img">
+    <img src="<%= page.photos %>" src="<%- theme.lazyloadImg %>" data-src="<%= page.photos %>" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+  </div>
+  <header class="pattern-header ">
+    <h1 class="entry-title">
+    友人帐</h1>
+  </header>
+</div>
+<div id="content" class="site-content">
+  <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
+    <div >
+      <!-- artitalk -->
+      <script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+      <script>
+        var img = "<%- theme.artitalk.img %>"; //说说旁边显示的头像
+        var appID = "<%- theme.artitalk.appID %>";
+        var appKEY = "<%- theme.artitalk.appKEY %>";
+        var per = "<%- theme.artitalk.per %>"; //每页显示说说的数量
+        var username = "<%- theme.artitalk.username %>"; //Leancloud中设置的用户名
+        var placeholder1="<%- theme.artitalk.placeholder1 %>";
+        var lazy = "<%- theme.artitalk.lazy %>";
+        var bgimg = "<%- theme.artitalk.bgimg %>";
+      </script>
+      <div id="lazy"></div>
+      <div id="artitalk"></div>
+      <script type="text/javascript" src="https://unpkg.com/artitalk"></script>
+      <!-- artitalk.end -->
+      <!-- 自定义样式 -->
+      <% if (theme.artitalk.style.enable){ %>
+        <style>
+          .cbp_tmtimeline>li:nth-child(odd) .cbp_tmlabel {
+            background: linear-gradient(60deg,<%- theme.artitalk.style.linear_gradient %>) 0% 0% / cover, url("<%- theme.artitalk.style.wallpaper %>"), url("https://ae01.alicdn.com/kf/H21b5f6b8496141a1979a33666e1074d9x.jpg") 0px 0px;    
+            <% if (theme.artitalk.style.animation){ %>
+              animation: 15s ease 0s infinite normal none running gradientBG;
+            <% } %>
+            color: <%- theme.artitalk.style.color %>;
+          }
+          .cbp_tmtimeline>li .cbp_tmlabel {
+            background: linear-gradient(60deg,<%- theme.artitalk.style.linear_gradient %>) 0% 0% / cover, url("<%- theme.artitalk.style.wallpaper %>"),url("https://ae01.alicdn.com/kf/H21b5f6b8496141a1979a33666e1074d9x.jpg") 0px 0px;  
+            <% if (theme.artitalk.style.animation){ %>
+              animation: 15s ease 0s infinite normal none running gradientBG;
+            <% } %>
+            color: <%- theme.artitalk.style.color %>;
+          }
+          .cbp_tmtimeline>li:nth-child(odd) .cbp_tmlabel:after {
+            border-right-color: <%- theme.artitalk.style.border_right_color %>
+          }
+          .cbp_tmtimeline>li .cbp_tmlabel:after {
+            border-right-color: <%- theme.artitalk.style.border_right_color %>
+          }
+          .button {
+            background: linear-gradient(60deg,<%- theme.artitalk.style.linear_gradient %>) 0% 0% / cover, url("<%- theme.artitalk.style.wallpaper %>"),url("https://ae01.alicdn.com/kf/H21b5f6b8496141a1979a33666e1074d9x.jpg") 0px 0px;   
+            <% if (theme.artitalk.style.animation){ %>
+              animation: 15s ease 0s infinite normal none running gradientBG;
+            <% } %>
+            color: <%- theme.artitalk.style.color %>;
+          }
+          @keyframes gradientBG {
+              0% {
+                  background-position: 0% 50%;
+              }
+              50% {
+                  background-position: 100% 50%;
+              }
+              100% {
+                  background-position: 0% 50%;
+              }
+          }
+
+          .balck_white01 {
+            background: #333030;
+            color: #e3dede
+          }
+          .url02{
+            background: url("https://gitee.com/cungudafa/source/raw/master/img/bg/hyo/hyo01.jpg") 0% 0% / cover;
+          }
+        </style>
+      <% } %>
+      <!-- 自定义样式.end -->
+         
+    </div>
+    <div>
+      <!-- Personality customization -->
+      <h1>🌼个性定制</h1>
+      <p><a href="https://cungudafa.blog.csdn.net/article/details/106224223" target="_blank"> 教程快速门 </a></p>
+      <h1>👀示例站点</h1>
+      <div class="card-demo">
+        <div data-type="photo" style="display:inline-block;width:200px;height:100px;color: #333030;background: #e3dede;text-align:center;line-height:100px;margin-bottom:5px;cursor:pointer"><a href="" target="_blank">简约背景</a></div>
+        <div data-type="photo" style="display:inline-block;width:200px;height:100px;background: url('https://bing.rthe.net/wallpaper') 0% 0% / cover;text-align:center;line-height:100px;margin-bottom:5px;cursor:pointer"><a href="https://wztlink1013.com/essay/" target="_blank">图片背景</a></div>
+        <div data-type="photo" style="display:inline-block;width:200px;height:100px;background: linear-gradient(102.7deg,#fddaff 8.2%,#dfadfc 19.6%,#adcdfc 36.8%,#adfcf4 73.2%,#caf8d0 90.9%);text-align:center;line-height:100px;margin-bottom:5px;cursor:pointer"><a href="http://cungudafa.top/artitalk/" target="_blank">渐变背景</a></div>
+        <div data-type="photo" style="display:inline-block;width:200px;height:100px;background: linear-gradient(-45deg, #7F95D1, #FF82A9, #FFC0BE, #FFEBE7) 0% 0% / 400% 400%;animation: 15s ease 0s infinite normal none running gradientBG;text-align:center;line-height:100px;margin-bottom:5px;cursor:pointer"><a href="http://cungudafa.top/artitalk/" target="_blank">渐变动画</a></div>
+      </div>
+      <!-- Personality customization.end -->
+    </div>
+  </article>
+</div>
