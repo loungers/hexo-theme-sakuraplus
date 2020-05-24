@@ -32,14 +32,14 @@
       <% if (theme.artitalk.style.enable){ %>
         <style>
           .cbp_tmtimeline>li:nth-child(odd) .cbp_tmlabel {
-            background: linear-gradient(60deg,<%- theme.artitalk.style.linear_gradient %>) 0% 0% / cover, url("<%- theme.artitalk.style.wallpaper %>"), url("https://ae01.alicdn.com/kf/H21b5f6b8496141a1979a33666e1074d9x.jpg") 0px 0px;    
+            background: linear-gradient(60deg,<%- theme.artitalk.style.linear_gradient %>) 0% 0% / cover, url("<%- theme.artitalk.style.wallpaper %>")<% if (theme.artitalk.style.animation!=true){ %> 0% 0% / cover <% } %>;
             <% if (theme.artitalk.style.animation){ %>
               animation: 15s ease 0s infinite normal none running gradientBG;
             <% } %>
             color: <%- theme.artitalk.style.color %>;
           }
           .cbp_tmtimeline>li .cbp_tmlabel {
-            background: linear-gradient(60deg,<%- theme.artitalk.style.linear_gradient %>) 0% 0% / cover, url("<%- theme.artitalk.style.wallpaper %>"),url("https://ae01.alicdn.com/kf/H21b5f6b8496141a1979a33666e1074d9x.jpg") 0px 0px;  
+            background: linear-gradient(60deg,<%- theme.artitalk.style.linear_gradient %>) 0% 0% / cover, url("<%- theme.artitalk.style.wallpaper %>")<% if (theme.artitalk.style.animation!=true){ %> 0% 0% / cover<% } %>;
             <% if (theme.artitalk.style.animation){ %>
               animation: 15s ease 0s infinite normal none running gradientBG;
             <% } %>
@@ -52,7 +52,7 @@
             border-right-color: <%- theme.artitalk.style.border_right_color %>
           }
           .button {
-            background: linear-gradient(60deg,<%- theme.artitalk.style.linear_gradient %>) 0% 0% / cover, url("<%- theme.artitalk.style.wallpaper %>"),url("https://ae01.alicdn.com/kf/H21b5f6b8496141a1979a33666e1074d9x.jpg") 0px 0px;   
+            background: linear-gradient(60deg,<%- theme.artitalk.style.linear_gradient %>) 0% 0% / cover, url("<%- theme.artitalk.style.wallpaper %>")<% if (theme.artitalk.style.animation!=true){ %> 0% 0% / cover<% } %>;  
             <% if (theme.artitalk.style.animation){ %>
               animation: 15s ease 0s infinite normal none running gradientBG;
             <% } %>

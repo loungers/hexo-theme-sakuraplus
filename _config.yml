@@ -98,7 +98,7 @@ lazyloadImg: https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/loader/orange.progres
 
 # startdash url, title, desc img
 startdash: 
-  - {url: https://github.com/honjun/hexo-theme-sakura, title: Sakura, desc: 本站 hexo 主题, img: /img/startdash/sakura.md.png}
+  - {url: https://gitee.com/cungudafa/hexo-theme-sakuraplus, title: SakuraPlus, desc: 本站 hexo 主题, img: /img/startdash/sakura.md.png}
   - {url: https://v.youku.com/v_show/id_XMjg5MzUyMDY3Ng==.html?refer=seo_operation.liuxiao.liux_00003303_3000_Qzu6ve_19042900, title: Youku, desc: 内在美电影, img: /img/startdash/beautyinside.jpg}
   - {url: https://blog.csdn.net/cungudafa, title: csdn, desc: 技术栈, img: /img/startdash/cungudafa.jpg}
 
@@ -172,11 +172,11 @@ artitalk:
   # 参考 https://blog.csdn.net/cungudafa/article/details/106224223
   style: 
     enable: true #个性定制
-    wallpaper: https://bing.rthe.net/wallpaper  # 壁纸
+    wallpaper: https://ae01.alicdn.com/kf/H21b5f6b8496141a1979a33666e1074d9x.jpg #https://bing.rthe.net/wallpaper  # 壁纸
     color: white   #字体颜色
-    linear_gradient: rgb(127, 149, 209,0.5), rgb(255, 130, 169,0.5), rgb(255, 192, 190,0.5), rgb(255, 192, 190,0.3)
+    linear_gradient: rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35) 95% # 渐变规律颜色+百分比 rgb(109, 208, 242) 15%, rgb(245, 154, 190) 85%
     border_right_color: '#FFC0BE' #三角颜色
-    animation: true #true打开动画渐变渲染
+    animation: false #true打开动画渐变渲染
 
 # 友链页信息,tips支持html语言
 mylinkinfo:
