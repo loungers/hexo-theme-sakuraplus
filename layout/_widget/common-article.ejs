@@ -169,17 +169,17 @@
             <i class="fa fa-creative-commons" aria-hidden="true"></i>ncsa4.0</a>
           </div>
           <div class="post-tags" style="color: #a39391">
-              <span><i class="fa fa-tags"></i>
-                <% post.tags.each((tag)=>{ %>
-                    <a href="<%- url_for(tag.path) %>" style="color: #716e77;"><%= tag.name %><em>·</em></a>
-                  <% }) %>
-                </span>
-                <span>
-                  <i class="iconfont icon-file"></i>
-                  <% post.categories.each((category)=>{ %>
-                    <a href="<%- url_for(category.path) %>" style="color: #716e77;"><%= category.name %></a>
-                  <% }) %>
-                </span>
+                <span><i class="fa fa-tags"></i>
+                  <% post.tags.each((tag)=>{ %>
+                      <a href="<%- url_for(tag.path) %>" style="color: #716e77;"><%= tag.name %><em>·</em></a>
+                    <% }) %>
+                  </span>
+                  <span>
+                    <i class="iconfont icon-file"></i>
+                    <% post.categories.each((category)=>{ %>
+                      <a href="<%- url_for(category.path) %>" style="color: #716e77;"><%= category.name %></a>
+                    <% }) %>
+                  </span>
           </div>
           <div class="post-share" <% if (post.encrypt == true) { %>style="display:none" <% } %> >
             <div class="social-share sharehidden share-component"></div>

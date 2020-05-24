@@ -8,6 +8,12 @@ avatar: /img/custom/cungudafa.jpg
 url: https://cungudafa.top/
 description: 莫三天打鱼两天晒网
 
+# 左侧网站名称
+logo:
+  sakuraso: 姑
+  no: の
+  shironeko: 小屋
+
 siteBuildingTime: 2020-02-11 17:20:00 # your site build time or founded date(2020-05-20 17:20:00)
 
 #ICP备案信息尾部显示
@@ -115,11 +121,13 @@ donate:
 
 # 视频地址为https://cdn.jsdelivr.net/gh/honjun/hojun@1.2/Unbroken.mp4，配置如下
 movies:
+  enable: false
   url: https://cdn.jsdelivr.net/gh/honjun/hojun@1.2
   # 多个视频用逗号隔开，随机获取。支持的格式目前已知MP4,Flv。其他的可以试下，不保证有用
   name: Unbroken.mp4
 
 aplayer:  ##媒体播放引擎，移动端会禁止自动播放
+  enable: false
   id: 2660651585
   server: netease
   type: playlist
@@ -147,8 +155,11 @@ valine:
   pageSize: 10
   palaceholder: 你是我一生只会遇见一次的惊喜 # Comment Box placeholder
   requiredFields: ['nick','mail'] #设置必填项
+  background: https://gitee.com/cungudafa/source/raw/master/img/gif/Sitich/Sitich2.gif #输入框提示动画
 
 # 动态说说页面
+# You can get your appid and appkey from https://leancloud.cn
+# more info please open https://artitalk.js.org
 artitalk:
   appID: CiSXX5nyVSt0RIztkC1oLL9P-MdYXbMMI
   appKEY: vrfkqkuHou88MuRKfF3OeExc
@@ -158,7 +169,8 @@ artitalk:
   lazy: 1 # 加载动画1:加载,0:取消加载
   img: https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/custom/cungudafa.jpg #用户默认头像
   bgimg: https://gitee.com/cungudafa/source/raw/master/img/gif/Sitich/Sitich16.gif # 输入框小动画
-  # 极简黑白主题minimalist、渐变主题gradient、壁纸wallpaper
+  # 极简黑白主题minimalist、渐变主题gradient、壁纸wallpaper 
+  # 参考 https://blog.csdn.net/cungudafa/article/details/106224223
   style: 
     enable: true #个性定制
     wallpaper: https://bing.rthe.net/wallpaper  # 壁纸
@@ -209,7 +221,7 @@ fancybox:
 linkcard:
   enable: true 
 
-# 是否开启字数统计 (可以在formatton设置no_word_count: true)
+# 是否开启字数统计 (可以在post设置no_word_count: true)
 #不需要使用，直接设置值为false，或注释掉
 word_count: true
 
@@ -234,7 +246,7 @@ baiduAnalytics:
 
 # 自动生成sitemap
 sitemap:
-	path: sitemap.xml
+  path: sitemap.xml
 baidusitemap:
   path: baidusitemap.xml
   
@@ -275,7 +287,8 @@ js:
 
 libs:
   css:
-    style: https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/style.css
+    googlefonts: https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC
+    style: ../css/style.css
     lib: https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/lib.min.css
     font: https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/font.css
     insight: /css/insight.css

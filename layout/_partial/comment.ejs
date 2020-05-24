@@ -1,6 +1,12 @@
 <% if (theme.valine.enable && post.comments) { %>
     <div id="vcomments"></div>
     <script src="<%- theme.libs.js.valine %>"></script><!-- 最新版 -->
+    <style>
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("<%- url_for(theme.valine.background) %>") 100% 100% no-repeat;
+    }
+    </style>
     <script>
         new Valine({
             el: '#vcomments',
