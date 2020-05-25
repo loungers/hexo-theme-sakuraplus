@@ -31,6 +31,7 @@ mathjax: 0 # 1开启,公式解析
 menus:
   首页: { path: /, fa: fa-fort-awesome faa-shake }
   归档: { path: /archives, fa: fa-archive faa-shake, submenus: { 
+    统计: {path: /analytics/ , fa: fa-line-chart },
     标签: {path: /tags, fa: fa-tags }, 
     技术: {path: /categories/技术/, fa: fa-code }, 
     生活: {path: /categories/生活/, fa: fa-file-text-o } #, 
@@ -78,7 +79,7 @@ msocial:
 #--------------------------------首页----------------------------------------
 # 首页轮播图蒙版
 bgclass: filter-dot # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
-# 轮播图
+# 轮播图、如果文章没有设置photos会在这里随机取图
 bg:
   - https://cdn.jsdelivr.net/gh/cungudafa/cdn@2.0.9/img/cover/(0).jpg.webp
   - https://cdn.jsdelivr.net/gh/cungudafa/cdn@2.0.9/img/cover/(1).jpg.webp
@@ -107,6 +108,11 @@ startdash:
 homePageSortType: -1
 # Home page article shown number)首页最多显示文章数
 homeArticleShown: 10
+
+# Whether to display post-calender in the `archive` page
+# 设置在归档页面achive中是否显示'文章日历'控件
+postCalendar: true 
+
 
 #--------------------------------功能页面-------------------------------------------
 donate:
@@ -176,7 +182,7 @@ artitalk:
     color: white   #字体颜色
     linear_gradient: rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35) 95% # 渐变规律颜色+百分比 rgb(109, 208, 242) 15%, rgb(245, 154, 190) 85%
     border_right_color: '#FFC0BE' #三角颜色
-    animation: false #true打开动画渐变渲染
+    animation: false #true打开动画渐变渲染(壁纸和动画渐变渲染建议只开一个)
 
 # 友链页信息,tips支持html语言
 mylinkinfo:
@@ -294,6 +300,7 @@ libs:
     tags: https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/tags.css
     fancybox: https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/jquery.fancybox.min.css
     sharejs: https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/sharejs.css
+    tocbot: https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css
     live2d_widget: https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css
     logo:
       enable: true # 自定义logo
@@ -308,6 +315,7 @@ libs:
     sakura_app: https://cdn.jsdelivr.net/gh/cungudafa/cdn/js/sakura-app.js  
     busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js 
     fancybox: https://cdn.jsdelivr.net/gh/cungudafa/cdn/js/jquery.fancybox.min.js
+    echarts: https://cdn.jsdelivr.net/gh/cungudafa/cdn/js/echarts.min.js
     valine: https://unpkg.com/valine/dist/Valine.min.js
     sakura_petal: https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/js/sakura.js #other
     hititle: https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/js/hititle.js 

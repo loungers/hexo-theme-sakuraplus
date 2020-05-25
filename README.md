@@ -45,6 +45,8 @@ Hexo主题Sakura由[Hojun大佬](https://www.hojun.cn/)修改自WordPress主题[
 - 优化css和js在config可配置
 - 优化文章图片阴影显示和引用样式（阅读butter）
 - 增加播放器隐藏选项
+- 新增了分析页面（echarts图）
+- 归档页新增[文章日历](https://echarts.apache.org/zh/option.html#calendar)（echarts图）
 
 
 ## 贡献者
@@ -716,7 +718,15 @@ js:
 
 ## 更新日志
 
-- 5.23 计划修改文章页面展现效果（对代码块和表格图片展现更加优化）
+- 5.25 
+修复了没有设置文章时首页显示404图片，（bg中随机选择）
+新增了分析页面（echarts图），来源于drew整理matery主题的效果
+归档页新增文章日历（echarts图）
+新增标题下显示浏览数
+
+- 5.23 
+计划修改文章页面展现效果（对代码块和表格图片展现更加优化）
+
 - 5.22 重铸
 
 

@@ -12,6 +12,7 @@ valine: 评论系统
 help: 关于本站
 links: 友情链接
 photos: 相册
+artitalk: 心情
 book: 悦读
 music: 音乐
 cloud: 资源
@@ -34,6 +35,10 @@ read_more: '阅读全文'
 contents: 文章目录
 views: 热度
 visitors: 热度
+postCharts: 文章统计图
+postPublishChart: 文章发布统计图
+categoriesChart: 文章分类统计图
+top10TagsChart: TOP10 标签统计图
 
 none: 无
 insight:
