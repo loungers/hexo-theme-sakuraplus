@@ -37,24 +37,20 @@
             <a href="<%- url_for(category.path) %>"><%= category.name %></a>
           <% }) %>
         </span>
-        <!-- 添加浏览数和评论数   未实现
-        <div class="post-meta">
-            <% if (post.top){ %>
-              <i class="fa fa-thumb-tack"></i>
-              <font color=ff9999>置顶</font>
-              <span class="post-meta-divider"> · </span>
-            <% } %>
-            <span><i class="iconfont icon-attention"></i>
-              <span id="busuanzi_value_page_pv">热度</span> 
-              <span class="post-meta-divider"> · </span>
-            </span>
-            <span><i class="iconfont icon-mark"></i>
-              <a href="<%- url_for(post.path) %>#comments"><span class="valine-comment-count" data-xid="pathname"></span> 条评论</a>
-            </span>
-        </div> -->
+        <!-- <span><i class="iconfont icon-attention"></i>
+          本页共<span id="busuanzi_value_page_pv"> </span>次阅读
+        </span> -->
       </div>
       <div class="float-content">
-        <p><%= post.description %></p>
+        <p>
+        <% if (post.description && post.description.length > 0) { %>
+            <%- post.description %>
+        <% } else { %>
+          <% if (theme.post_description.enable) { %>
+            <%- strip_html(post.content).substring(0, 50) %>
+          <% } %>
+        <% } %>
+        </p>
         <div class="post-bottom">
           <a href="<%- url_for(post.path) %>" class="button-normal">
             <i class="iconfont icon-caidan"></i>

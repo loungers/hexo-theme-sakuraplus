@@ -1,19 +1,20 @@
   <div class="pattern-center-blank"></div>
   <% if (post.photos && post.photos.length){ %>
-    <div class="pattern-center ">
-      <div class="pattern-attachment-img">
-        <img src="<%- theme.lazyloadImg%>" data-src="<%= post.photos %>" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
-      </div>
-      <header class="pattern-header ">
-        <h1 class="entry-title">
-        <%= post.keywords %></h1>
-        <span class="post-meta-item-icon">
-          <i class="iconfont icon-attention"></i>
-        </span>
-        <span class="post-meta-item-text">本页共<span id="busuanzi_value_page_pv"> </span>次阅读
-        </span>
-      </header>
+  <div class="pattern-center ">
+    <div class="pattern-attachment-img">
+      <img src="<%- theme.lazyloadImg%>" data-src="<%= post.photos %>" class="lazyload" onerror="imgError(this,3)"
+        style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
     </div>
+    <header class="pattern-header ">
+      <h1 class="entry-title">
+        <%= post.keywords %></h1>
+      <span class="post-meta-item-icon">
+        <i class="iconfont icon-attention"></i>
+      </span>
+      <span class="post-meta-item-text">本页共<span id="busuanzi_value_page_pv"> </span>次阅读
+      </span>
+    </header>
+  </div>
   <% } %>
   <div id="content" class="site-content">
     <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
@@ -30,12 +31,13 @@
           </div>
         </div>
       </div>
-      <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+      <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent">
+      </div>
       <footer class="post-footer">
         <div class="post-lincenses" style="color: #ff9966;">
-            欢迎转载，转载时请注明来源哦！
-            <br>
-            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow">
+          欢迎转载，转载时请注明来源哦！
+          <br>
+          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow">
             <i class="fa fa-creative-commons" aria-hidden="true"></i>知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
         </div>
         <div class="post-tags">
@@ -46,85 +48,138 @@
         </div>
       </footer><!-- .entry-footer -->
     </article>
-      <!-- #post-## -->
-      <% if (post.author && post.authorAbout){ %>
-      <section class="author-profile">
-        <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-          <a href="<%- post.authorLink %>" class="profile gravatar"><img src="<%- post.avatar%>" itemprop="image" alt="<%- post.author %>" height="70" width="70"></a>
-          <div class="meta">
-            <span class="title">Author</span>
-            <h3 itemprop="name">
+    <!-- #post-## -->
+    <% if (post.author && post.authorAbout){ %>
+    <section class="author-profile">
+      <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        <a href="<%- post.authorLink %>" class="profile gravatar"><img src="<%- post.avatar%>" itemprop="image"
+            alt="<%- post.author %>" height="70" width="70"></a>
+        <div class="meta">
+          <span class="title">Author</span>
+          <h3 itemprop="name">
             <a href="<%- post.authorLink%>" itemprop="url" rel="author"><%- post.author %></a>
-            </h3>
-          </div>
+          </h3>
         </div>
-        <hr>
-        <p><i class="iconfont icon-write"></i><%- post.authorAbout%></p>
-      </section>
-      <% } %>
+      </div>
+      <hr>
+      <p><i class="iconfont icon-write"></i><%- post.authorAbout%></p>
+    </section>
+    <% } %>
   </div><!-- #primary -->
-</div>
+  </div>
 
-<% if (theme.copyright.enable) { %>
+  <% if (theme.copyright.enable) { %>
   <script>
-      $('#content').on('copy', function (e) {
-          // IE8 or earlier browser is 'undefined'
-          if (typeof window.getSelection === 'undefined') return;
-  
-          var selection = window.getSelection();
-          // if the selection is short let's not annoy our users.
-          if (('' + selection).length < Number.parseInt('<%- theme.copyright.minCharNumber %>')) {
-              return;
-          }
-  
-          // create a div outside of the visible area and fill it with the selected text.
-          var bodyElement = document.getElementsByTagName('body')[0];
-          var newdiv = document.createElement('div');
-          newdiv.style.position = 'absolute';
-          newdiv.style.left = '-99999px';
-          bodyElement.appendChild(newdiv);
-          newdiv.appendChild(selection.getRangeAt(0).cloneContents());
-  
-          // we need a <pre> tag workaround.
-          // otherwise the text inside "pre" loses all the line breaks!
-          if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
-              newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
-          }
-  
-          var url = document.location.href;
-          newdiv.innerHTML += '<br />'
-              + '<%- __("from")  %>: <%= config.title %><br />'
-              + '<%- __("author")  %>: <%= config.author %><br />'
-              + '<%- __("link")  %>: <a href="' + url + '">' + url + '</a><br />'
-              + '<%- theme.copyright.description %>';
-  
-          selection.selectAllChildren(newdiv);
-          window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
-      });
+    $('#content').on('copy', function (e) {
+      // IE8 or earlier browser is 'undefined'
+      if (typeof window.getSelection === 'undefined') return;
+
+      var selection = window.getSelection();
+      // if the selection is short let's not annoy our users.
+      if (('' + selection).length < Number.parseInt('<%- theme.copyright.minCharNumber %>')) {
+        return;
+      }
+
+      // create a div outside of the visible area and fill it with the selected text.
+      var bodyElement = document.getElementsByTagName('body')[0];
+      var newdiv = document.createElement('div');
+      newdiv.style.position = 'absolute';
+      newdiv.style.left = '-99999px';
+      bodyElement.appendChild(newdiv);
+      newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+      // we need a <pre> tag workaround.
+      // otherwise the text inside "pre" loses all the line breaks!
+      if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+        newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+      }
+
+      var url = document.location.href;
+      newdiv.innerHTML += '<br />' +
+        '<%- __("from")  %>: <%= config.title %><br />' +
+        '<%- __("author")  %>: <%= config.author %><br />' +
+        '<%- __("link")  %>: <a href="' + url + '">' + url + '</a><br />' +
+        '<%- theme.copyright.description %>';
+
+      selection.selectAllChildren(newdiv);
+      window.setTimeout(function () {
+        bodyElement.removeChild(newdiv);
+      }, 200);
+    });
   </script>
   <% } %>
 
-<!-- 代码块功能依赖 -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cungudafa/cdn/js/codeBlock/codeBlockFuction.js"></script>
+  <!-- 代码块功能依赖 -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cungudafa/cdn/js/codeBlock/codeBlockFuction.js">
+  </script>
 
-<!-- 代码语言 -->
-<% if (theme.code.lang) { %>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cungudafa/cdn/js/codeBlock/codeLang.js"></script>
-<% } %>
+  <!-- 代码语言 -->
+  <% if (theme.code.lang) { %>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cungudafa/cdn/js/codeBlock/codeLang.js"></script>
+  <% } %>
 
-<!-- 代码块复制 -->
-<% if (theme.code.copy) { %>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cungudafa/cdn/js/codeBlock/codeCopy.js"></script>
-<% } %>
+  <!-- 代码块复制 -->
+  <% if (theme.code.copy) { %>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cungudafa/cdn/js/codeBlock/codeCopy.js"></script>
+  <% } %>
 
-<!-- 代码块收缩 -->
-<% if (theme.code.shrink) { %>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cungudafa/cdn/js/codeBlock/codeShrink.js"></script>
-<% } %>
+  <!-- 代码块收缩 -->
+  <% if (theme.code.shrink) { %>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cungudafa/cdn/js/codeBlock/codeShrink.js"></script>
+  <% } %>
 
-<!-- 代码块折行 -->
-<% if (!theme.code.break) { %>
-<style type="text/css">
-code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
-</style>
+  <!-- 代码块折行 -->
+  <% if (!theme.code.break) { %>
+  <style type="text/css">
+    code[class*="language-"],
+    pre[class*="language-"] {
+      white-space: pre !important;
+    }
+  </style>
+  <% } %>
+
+  <!-- 仿volantis主题小标签 -->
+  <!-- 代码块收缩 -->
+  <% if (theme.v_tags.enable) { %>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cungudafa/cdn@2.1.4/js/tags/btns.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cungudafa/cdn@2.1.4/js/tags/checkbox.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cungudafa/cdn@2.1.4/js/tags/folding.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cungudafa/cdn@2.1.4/js/tags/tabs.js"></script>
+  <script>
+    /* eslint-disable */
+    (function ($) {"use strict";
+
+      function setTabs() {
+        const $tabs = $(".tabs");
+        if ($tabs.length === 0) return;
+        let $navs = $tabs.find(".nav-tabs .tab");
+        for (var i = 0; i < $navs.length; i++) {
+          let $a = $tabs.find($navs[i].children[0]);
+          $a.addClass($a.attr("href"));
+          $a.removeAttr("href");
+        }
+        $(".tabs .nav-tabs").on("click", "a", (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          let $tab = $(e.target.parentElement.parentElement.parentElement);
+          $tab.find(".nav-tabs .active").removeClass("active");
+          $tab.find(e.target.parentElement).addClass("active");
+          $tab.find(".tab-content .active").removeClass("active");
+          $tab.find($(e.target).attr("class")).addClass("active");
+          return false;
+        });
+      }
+
+      $(function () {
+        setTabs();
+        // $(".article .video-container").fitVids();
+        $(".scroll-down").on("click", function () {
+          scrolltoElement(".l_body");
+        });
+        setTimeout(function () {
+          $("#loading-bar-wrapper").fadeOut(500);
+        }, 300);
+      });
+    })(jQuery);
+  </script>
 <% } %>

@@ -1,8 +1,10 @@
-Hexo主题Sakura由[Hojun大佬](https://www.hojun.cn/)修改自WordPress主题[Sakura](https://github.com/mashirozx/Sakura/)，感谢原作者[Mashiro](https://2heng.xin/)
-
-由于sakura最近没有再维护了，这里我讲之前的调整和修改做了整理，开源sakuraplus（hexo）版本。
-
 # hexo-theme-sakuraplus
+
+- 示例站：[cungudafa.top](https://cungudafa.top)   
+
+- 预览视频： [bilibili](https://www.bilibili.com/video/BV1C7411N762)  
+
+- 源码地址：[hexo-theme-sakuraplus](https://gitee.com/cungudafa/hexo-theme-sakuraplus)
 
 > Hexo主题Sakura由[Hojun大佬](https://www.hojun.cn/)修改自WordPress主题[Sakura](https://github.com/mashirozx/Sakura/)，感谢原作者[Mashiro](https://2heng.xin/)
 
@@ -47,7 +49,7 @@ Hexo主题Sakura由[Hojun大佬](https://www.hojun.cn/)修改自WordPress主题[
 - 增加播放器隐藏选项
 - 新增了分析页面（echarts图）
 - 归档页新增[文章日历](https://echarts.apache.org/zh/option.html#calendar)（echarts图）
-
+- 新增文章描述为空时，自动获取文章前40字
 
 ## 贡献者
 
@@ -66,6 +68,7 @@ Hexo主题Sakura由[Hojun大佬](https://www.hojun.cn/)修改自WordPress主题[
 ```bash
 git clone https://gitee.com/cungudafa/hexo-theme-sakuraplus.git
 ```
+
 
 ## 配置
 
@@ -209,7 +212,7 @@ hexo new page "conmment"
 ---
 title: 留言板
 type: comment
-layout: "contact"
+layout: "comment"
 date: 2020-04-21 20:17:58
 photos: https://gitee.com/cungudafa/source/raw/master/img/bg/hyo/3.jpg
 ---
@@ -264,7 +267,7 @@ links:
 ```
 >`Tips：`注意前面的空格哦，很重要！
 
-增加了提示接口语句，在主题配置文件，可以直接写入你的网站信息。
+增加了友链要求提示项`tips`（支持html标签格式），在主题配置文件，`name、desc、url、img`可以直接写入你的网站信息。
 
 ```yaml
 # 友链页信息,tips支持html语言
@@ -291,6 +294,7 @@ mylinkinfo:
 menus:
   首页: { path: /, fa: fa-fort-awesome faa-shake }
   归档: { path: /archives, fa: fa-archive faa-shake, submenus: { 
+    统计: {path: /analytics/ , fa: fa-line-chart },
     标签: {path: /tags, fa: fa-tags }, 
     技术: {path: /categories/技术/, fa: fa-code }, 
     生活: {path: /categories/生活/, fa: fa-file-text-o } #, 
@@ -424,13 +428,20 @@ feed:
 ### 添加 [DaoVoice](http://www.daovoice.io/) 在线聊天功能（可选的）
 
 前往 [DaoVoice](http://www.daovoice.io/) 官网注册并且获取 `app_id`，并将 `app_id` 填入主题的 `_config.yml` 文件中。
-
+```yaml
+# Online contact ##在线聊天 https://www.daocloud.io/
+daovoice: 
+  enable: false
+  app_id: f6b2a0b1 ##这里替换成你DaoVoice上的appid
+```
 
 ### 在线发布说说页面
 根据官网教程配置[artitalk.js.org](https://artitalk.js.org)，本主题融合了自定义配置背景的功能，具体可以参考[个性定制教程](https://cungudafa.blog.csdn.net/article/details/106224223)。
 
 ```yaml
 # 动态说说页面
+# You can get your appid and appkey from https://leancloud.cn
+# more info please open https://artitalk.js.org
 artitalk:
   appID: CiSXX5nyVSt0RIztkC1oLL9P-MdYXbMMI
   appKEY: vrfkqkuHou88MuRKfF3OeExc
@@ -444,11 +455,11 @@ artitalk:
   # 参考 https://blog.csdn.net/cungudafa/article/details/106224223
   style: 
     enable: true #个性定制
-    wallpaper: https://bing.rthe.net/wallpaper  # 壁纸
+    wallpaper: https://ae01.alicdn.com/kf/H21b5f6b8496141a1979a33666e1074d9x.jpg #https://bing.rthe.net/wallpaper  # 壁纸
     color: white   #字体颜色
-    linear_gradient: rgb(127, 149, 209,0.5), rgb(255, 130, 169,0.5), rgb(255, 192, 190,0.5), rgb(255, 192, 190,0.3)
+    linear_gradient: rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35) 95% # 渐变规律颜色+百分比 rgb(109, 208, 242) 15%, rgb(245, 154, 190) 85%
     border_right_color: '#FFC0BE' #三角颜色
-    animation: true #true打开动画渐变渲染
+    animation: false #true打开动画渐变渲染(壁纸和动画渐变渲染建议只开一个)
 ```
 >根据你的爱好修改字体颜色，背景，动画等。
 ### 修改页脚
@@ -539,7 +550,15 @@ valine:
   background: https://gitee.com/cungudafa/source/raw/master/img/gif/Sitich/Sitich2.gif
 ```
 
-### 说说
+### 文章分析
+
+日历页面（在归档页面下方，可选择性开启），文章分析页面（选择性开启，若关闭，请在菜单栏中删除即可）
+
+```yaml
+# Whether to display post-calender in the `archive` page
+# 设置在归档页面achive中是否显示'文章日历'控件
+postCalendar: true 
+```
 
 ## 文章 Front-matter 介绍
 
@@ -555,17 +574,17 @@ valine:
 authorLink|无| 链接
 avatar|无| 头像
 authorAbout| 无| 简介（非文章页设置为一言）
-| photos        | `featureImages` 中的某个值   | 文章特征图，推荐使用图床(腾讯云、七牛云、又拍云等)来做图片的路径.如: `http://xxx.com/xxx.jpg` |
+| photos        | `bg` 中的某个值   | 文章特征图，推荐使用图床(腾讯云、七牛云、又拍云等)来做图片的路径.如: `http://xxx.com/xxx.jpg` |
 | top        | `true`                      | 推荐文章（文章是否置顶），如果 `top` 值为 `true`，则会作为首页推荐文章 |
 | mathjax    | `false`                     | 是否开启数学公式支持 ，本文章是否开启 `mathjax`，且需要在主题的 `_config.yml` 文件中也需要开启才行 |
 | categories | 无                          | 文章分类，本主题的分类表示宏观上大的分类，只建议一篇文章一个分类 |
 | tags       | 无                          | 文章标签，一篇文章可以多个标签                              |
-description| 无 | 一句话描述摘要
+description| 默认取文章前40个字 | 一句话描述摘要
 | keywords   | 文章标题                     | 文章关键字，SEO 时需要                              |
 | reprintPolicy | cc_by                    | 文章转载规则， 可以是 cc_by, cc_by_nd, cc_by_sa, cc_by_nc, cc_by_nc_nd, cc_by_nc_sa, cc0, noreprint 或 pay 中的一个 |
 
 > **注意**:
-> 1. 如果 `photos` 属性不填写的话，首页会显示404图像，文章内部不显示图像。
+> 1. 如果 `photos` 属性不填写的话，首页会在主题配置文件的bg下，随机选择一张图片，同时进入文章内部不显示顶部图像。
 > 2. `date` 的值尽量保证每篇文章是唯一的。
 > 3. 建议文章标签和文章分类填写上。
 > 4. 您可以在文章md文件的 front-matter 中指定 reprintPolicy 来给单个文章配置转载规则
@@ -682,7 +701,9 @@ baiduAnalytics:
 
 ## 效果预览
 
-[video(video-P1VLsXuu-1590244004436)(type-bilibili)(url-https://player.bilibili.com/player.html?aid=92268056)(image-https://ss.csdn.net/p?http://i0.hdslb.com/bfs/archive/5c7bf39463d26d7a906b0c63f16d59afdddbc5f3.jpg)(title-Hexo(sakura)主题博客预览)]
+示例站：[cungudafa.top](https://cungudafa.top)
+
+视频：[bilibili](https://www.bilibili.com/video/BV1C7411N762)
 
 
 ## 自定制修改
@@ -723,6 +744,7 @@ js:
 新增了分析页面（echarts图），来源于drew整理matery主题的效果
 归档页新增文章日历（echarts图）
 新增标题下显示浏览数
+新增自动获取前50字为文章描述
 
 - 5.23 
 计划修改文章页面展现效果（对代码块和表格图片展现更加优化）

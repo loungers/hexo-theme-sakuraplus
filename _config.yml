@@ -109,9 +109,12 @@ homePageSortType: -1
 # Home page article shown number)首页最多显示文章数
 homeArticleShown: 10
 
-# Whether to display post-calender in the `archive` page
-# 设置在归档页面achive中是否显示'文章日历'控件
-postCalendar: true 
+
+# 首页卡片显示文章描述
+post_description:
+  enable: true # 自动获取文章前50字
+
+
 
 
 #--------------------------------功能页面-------------------------------------------
@@ -197,7 +200,16 @@ mylinkinfo:
 # 简介在about页面需要单独配置（/js/third-party/botui.js）
 
 # books、movies页面使用的是豆瓣插件，在主题目录配置
-    
+
+# Whether to display post-calender in the `archive` page
+# 设置在归档页面achive中是否显示'文章日历'控件
+postCalendar: true 
+
+# 仿volantis主题小标签美化 
+# 更多详细使用参考 https://volantis.js.org/v2/tag-plugins/
+v_tags:
+  enable: true
+
 #--------------------------------其他功能--------------------------------------------
 
 # 简易信息聚合,站点共享
@@ -207,7 +219,7 @@ rss: /atom.xml
 # minCharNumber: Approve copyright information by copying at least how many characters.
 # 是否激活复制文章时追加博客和作者的版权信息.
 copyright:
-  enable: false
+  enable: true
   minCharNumber: 120 # 至少复制多少个字符就追加版权信息.
   description: 本文章著作权归作者所有，任何形式的转载都请注明出处。
 
