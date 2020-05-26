@@ -22,15 +22,16 @@
 <div id="content" class="site-content">
   <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
     <div >
-      <!-- artitalk -->
+      <!-- artitalk more: https://artitalk.js.org/doc.html -->
       <script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
       <script>
-        var img = "<%- theme.artitalk.img %>"; //说说旁边显示的头像
         var appID = "<%- theme.artitalk.appID %>";
         var appKEY = "<%- theme.artitalk.appKEY %>";
         var per = "<%- theme.artitalk.per %>"; //每页显示说说的数量
+        var severurl = "<%- theme.artitalk.severurl %>";	//leancloud绑定的api域名
         var username = "<%- theme.artitalk.username %>"; //Leancloud中设置的用户名
         var placeholder1="<%- theme.artitalk.placeholder1 %>";
+        var placeholder2="<%- theme.artitalk.placeholder2 %>";	//输入头像url的输入框的占位符
         var lazy = "<%- theme.artitalk.lazy %>";
         var bgimg = "<%- theme.artitalk.bgimg %>";
       </script>

@@ -173,9 +173,10 @@ artitalk:
   appKEY: vrfkqkuHou88MuRKfF3OeExc
   per: 7 #每页显示说说的数量
   username: cungudafa # Leancloud中设置的用户名
-  placeholder1: 没有密码，不能评论！ # 密码框提示语
-  lazy: 1 # 加载动画1:加载,0:取消加载
-  img: https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/custom/cungudafa.jpg #用户默认头像
+  placeholder1: 写点啥呢 # 输入框提示语
+  placeholder2: 要更新头像吗？ # 头像提示语
+  severurl: '' #国内版填写
+  lazy: 1 # 加载动画1:加载,0取消加载
   bgimg: https://gitee.com/cungudafa/source/raw/master/img/gif/Sitich/Sitich16.gif # 输入框小动画
   # 极简黑白主题minimalist、渐变主题gradient、壁纸wallpaper 
   # 参考 https://blog.csdn.net/cungudafa/article/details/106224223
