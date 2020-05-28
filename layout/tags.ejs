@@ -44,6 +44,13 @@
             }) %>
           </div>
         </div>
+
+        <%- partial('_widget/tag-cloud') %>
+
+        <% if (site.tags && site.tags.length > 0) { %>
+        <%- partial('_widget/tag-wordcloud') %>
+        <% } %>
+
       
         <section class="author-profile">
           <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">

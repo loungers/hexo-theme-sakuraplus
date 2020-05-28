@@ -306,7 +306,7 @@ js:
 libs:
   css:
     googlefonts: https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC
-    style: https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/style.css
+    style: https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/style.css #/css/style.css # 
     lib: https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/lib.min.css
     font: https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/font.css
     insight: /css/insight.css

@@ -739,6 +739,12 @@ js:
 
 ## 更新日志
 
+- 5.28
+修复了[css](https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/style.css )（首页bug）
+修改了post文章引用样式（以前的不明显）
+增加了post文章图片样式（增加阴影）、段落h12345增加阿拉伯编号
+添加了tags页面多种词云效果
+
 - 5.25 
 修复了没有设置文章时首页显示404图片，（bg中随机选择）
 新增了分析页面（echarts图），来源于drew整理matery主题的效果
