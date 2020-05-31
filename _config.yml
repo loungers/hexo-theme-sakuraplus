@@ -208,8 +208,8 @@ postCalendar: true
 
 # 仿volantis主题小标签美化 
 # 更多详细使用参考 https://volantis.js.org/v2/tag-plugins/
-v_tags:
-  enable: true
+# v_tags:
+#   enable: true
 
 #--------------------------------其他功能--------------------------------------------
 

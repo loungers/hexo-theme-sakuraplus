@@ -49,13 +49,11 @@
 - 增加播放器隐藏选项
 - 新增了分析页面（echarts图）
 - 归档页新增[文章日历](https://echarts.apache.org/zh/option.html#calendar)（echarts图）
-- 新增文章描述为空时，自动获取文章前40字
+- 新增文章描述为空时，自动获取文章前50字
+- 新增404页面
 
-## 贡献者
 
-感谢下面列出的贡献者，没有他们，hexo-theme-sakuraplus 不会这么完美。
 
-- [@Uncle_Drew](https://github.com/Drew233/)
 
 ## 下载
 
