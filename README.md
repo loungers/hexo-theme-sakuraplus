@@ -51,7 +51,7 @@
 - 归档页新增[文章日历](https://echarts.apache.org/zh/option.html#calendar)（echarts图）
 - 新增文章描述为空时，自动获取文章前50字
 - 新增404页面
-
+- 新增左侧悬浮框（回到顶部，打开左侧目录，跳转评论，黑夜模式，背景音乐播放`在config设置`）
 
 
 
@@ -736,6 +736,9 @@ js:
 
 
 ## 更新日志
+- 6.2
+修复代码块样式（删掉`npm uninstall hexo-prism-plugin`插件）
+新增左侧悬浮框（回到顶部，打开左侧目录`小屏幕生效，否则只显示顶部目录`，跳转评论，黑夜模式，背景音乐播放`在config设置bg_music`）
 
 - 5.28
 修复了[css](https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/style.css )（首页bug）
@@ -753,6 +756,7 @@ js:
 - 5.23 
 计划修改文章页面展现效果（对代码块和表格图片展现更加优化）
 
-- 5.22 重铸
+- 5.22 
+重铸
 
 

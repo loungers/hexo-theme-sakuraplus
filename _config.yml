@@ -90,6 +90,9 @@ bg:
   - https://cdn.jsdelivr.net/gh/cungudafa/cdn@2.0.9/img/cover/(6).jpg.webp
   - https://cdn.jsdelivr.net/gh/cungudafa/cdn@2.0.9/img/cover/(7).jpg.webp
 
+# 背景音乐
+bg_music: https://m10.music.126.net/20200602143725/fa04d41ad48c7ee8acd87321007b190c/ymusic/a7c0/b207/4ec9/da0ca2f21a36146d14548b8c99f819d0.mp3
+
 # 首页提示语
 notice: 此处可爱贩卖机 24小时正常营业
 # 首页提示音
@@ -113,8 +116,6 @@ homeArticleShown: 10
 # 首页卡片显示文章描述
 post_description:
   enable: true # 自动获取文章前50字
-
-
 
 
 #--------------------------------功能页面-------------------------------------------
@@ -237,7 +238,7 @@ fancybox:
 
 # 外链转知乎卡片形式 
 linkcard:
-  enable: true 
+  enable: false #貌似和valine刷新有点冲突 ，排查中
 
 # 是否开启字数统计 (可以在post设置no_word_count: true)
 #不需要使用，直接设置值为false，或注释掉
