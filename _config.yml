@@ -177,7 +177,8 @@ artitalk:
   placeholder1: 写点啥呢 # 输入框提示语
   placeholder2: 要更新头像吗？ # 头像提示语
   severurl:  #国内版填写
-  lazy: 1 # 加载动画1:加载,0取消加载
+  slanguage: zh #语言English(en)及西班牙语Español(es)
+  lazy: 0 # 加载动画1:加载,0取消加载
   bgimg: https://gitee.com/cungudafa/source/raw/master/img/gif/Sitich/Sitich16.gif # 输入框小动画
   # 极简黑白主题minimalist、渐变主题gradient、壁纸wallpaper 
   # 参考 https://blog.csdn.net/cungudafa/article/details/106224223

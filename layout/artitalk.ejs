@@ -29,10 +29,11 @@
         var appKEY = "<%- theme.artitalk.appKEY %>";
         var per = "<%- theme.artitalk.per %>"; //每页显示说说的数量
         var username = "<%- theme.artitalk.username %>"; //Leancloud中设置的用户名
-        var placeholder1="<%- theme.artitalk.placeholder1 %>";
+        var placeholder1="<%- theme.artitalk.placeholder1 %>"; //说说中的占位符
         var placeholder2="<%- theme.artitalk.placeholder2 %>";	//输入头像url的输入框的占位符
         var lazy = "<%- theme.artitalk.lazy %>";
         var bgimg = "<%- theme.artitalk.bgimg %>";
+        var slanguage = "<%- theme.artitalk.slanguage %>";	//leancloud绑定的api域名
         <% if (theme.artitalk.severurl) { %> var severurl = "<% } %><%- theme.artitalk.severurl %><% if (theme.artitalk.severurl) { %> "; <% } %>	//leancloud绑定的api域名
       </script>
       <div id="lazy"></div>
@@ -87,11 +88,6 @@
           }
           .url02{
             background: url("https://gitee.com/cungudafa/source/raw/master/img/bg/hyo/hyo01.jpg") 0% 0% / cover;
-          }
-          path {
-              stroke: #9ea1a4;
-              stroke-width: 0.25;
-              fill: rgb(255,0,255,0.1);
           }
         </style>
       <% } %>
