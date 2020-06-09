@@ -736,17 +736,24 @@ js:
 
 
 ## 更新日志
+- 6.9
+
+补充粘贴复制（(教程)[https://blog.csdn.net/cungudafa/article/details/106647255]）
+
 - 6.2
+
 修复代码块样式（删掉`npm uninstall hexo-prism-plugin`插件）
 新增左侧悬浮框（回到顶部，打开左侧目录`小屏幕生效，否则只显示顶部目录`，跳转评论，黑夜模式，背景音乐播放`在config设置bg_music`）
 
 - 5.28
+
 修复了[css](https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/style.css )（首页bug）
 修改了post文章引用样式（以前的不明显）
 增加了post文章图片样式（增加阴影）、段落h12345增加阿拉伯编号
 添加了tags页面多种词云效果
 
 - 5.25 
+
 修复了没有设置文章时首页显示404图片，（bg中随机选择）
 新增了分析页面（echarts图），来源于drew整理matery主题的效果
 归档页新增文章日历（echarts图）
@@ -754,9 +761,11 @@ js:
 新增自动获取前50字为文章描述
 
 - 5.23 
+
 计划修改文章页面展现效果（对代码块和表格图片展现更加优化）
 
 - 5.22 
+
 重铸
 
 
