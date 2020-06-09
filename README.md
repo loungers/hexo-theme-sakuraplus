@@ -738,7 +738,7 @@ js:
 ## 更新日志
 - 6.9
 
-补充粘贴复制（(教程)[https://blog.csdn.net/cungudafa/article/details/106647255]）
+补充粘贴复制（[教程](https://blog.csdn.net/cungudafa/article/details/106647255)）
 
 - 6.2
 
