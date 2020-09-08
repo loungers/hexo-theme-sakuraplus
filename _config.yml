@@ -54,7 +54,7 @@ menus:
     # Lab: {path: /lab/, fa: fa-cogs },
     # valine: {path: /valine/, fa: fa-cogs }
   } }
-  项目: { path: /client/, fa: fa-android faa-vertical }
+  #项目: { path: /client/, fa: fa-android faa-vertical }
   RSS: { path: /atom.xml, fa: fa-rss faa-pulse }
 
 #social  url, img PC端配置
@@ -91,7 +91,10 @@ bg:
   - https://cdn.jsdelivr.net/gh/cungudafa/cdn@2.0.9/img/cover/(7).jpg.webp
 
 # 背景音乐
-bg_music: https://m10.music.126.net/20200602143725/fa04d41ad48c7ee8acd87321007b190c/ymusic/a7c0/b207/4ec9/da0ca2f21a36146d14548b8c99f819d0.mp3
+left_side_bar:
+  enable: false
+
+bg_music: https://cdn.jsdelivr.net/gh/cungudafa/cdn@latest/music/lovingstrangers.mp3
 
 # 首页提示语
 notice: 此处可爱贩卖机 24小时正常营业
@@ -153,8 +156,8 @@ aplayer:  ##媒体播放引擎，移动端会禁止自动播放
 # more info please open https://valine.js.org
 valine:
   enable: true ##打开valine评论功能true
-  appId: cBzr9TtJ0xY0s6f3H8bpmB3M-gzGzoHsz
-  appKey: 3opMyv2Vyx3mHa0IWitRGSoi
+  appId: U5VwYYeYlmI7C8UuoWxHrDBz-MdYXbMMI
+  appKey: SFxC9o4DBWIBfhIBOTHlaXGf
   notify: false #true自带评论mail回复提醒，第三方邮件提醒就设置为false
   verify: true #验证码
   visitor: false #统计阅读量
@@ -162,7 +165,7 @@ valine:
   avatar: monsterid # Gravatar style : mp/identicon/monsterid/wavatar/retro/hide
   guest_info: nick #,mail,link # custom comment header
   pageSize: 10
-  palaceholder: 你是我一生只会遇见一次的惊喜 # Comment Box placeholder
+  placeholder: 之前评论被恶意刷了，现在重新开一个评论，大家文明留言哈~ # Comment Box placeholder
   requiredFields: ['nick','mail'] #设置必填项
   background: https://gitee.com/cungudafa/source/raw/master/img/gif/Sitich/Sitich2.gif #输入框提示动画
 
@@ -170,15 +173,14 @@ valine:
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://artitalk.js.org
 artitalk:
-  appID: CiSXX5nyVSt0RIztkC1oLL9P-MdYXbMMI
-  appKEY: vrfkqkuHou88MuRKfF3OeExc
-  per: 7 #每页显示说说的数量
-  username: cungudafa # Leancloud中设置的用户名
+  appID: Q2Ic8AOt42Hq6BDUijHQGiCa-MdYXbMMI
+  appKEY: jPCMGhA9sSJ9jO3bUB7IhpvH
+  pageSize: 5 #每页显示说说的数量
   placeholder1: 写点啥呢 # 输入框提示语
   placeholder2: 要更新头像吗？ # 头像提示语
   severurl:  #国内版填写
-  slanguage: zh #语言English(en)及西班牙语Español(es)
-  lazy: 0 # 加载动画1:加载,0取消加载
+  lang: zh #语言English(en)及西班牙语Español(es)
+  motion: 0 # 加载动画1:加载,0取消加载
   bgimg: https://gitee.com/cungudafa/source/raw/master/img/gif/Sitich/Sitich16.gif # 输入框小动画
   # 极简黑白主题minimalist、渐变主题gradient、壁纸wallpaper 
   # 参考 https://blog.csdn.net/cungudafa/article/details/106224223

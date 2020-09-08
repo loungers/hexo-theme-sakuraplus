@@ -11,7 +11,7 @@
     <div id="page" class="site wrapper">
       <!-- banner -->
       <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <%- partial('_partial/mheader', null, {cache: !config.relative_link}) %>
+      
       <!-- body -->
       <%- body %>
       <!-- body.end -->
@@ -19,6 +19,7 @@
     <!-- search -->    
     <%- partial('_widget/search/insight') %>
     <!-- footer-->    
+    
     <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
     <!-- Side menu -->
     <div class="openNav no-select" style="height: 50px;">
@@ -31,6 +32,7 @@
     </div>
   </section>
   <!-- Floating window -->
+  <%- partial('_partial/mheader', null, {cache: !config.relative_link}) %>
   <%- partial('_partial/aplayer', null, {cache: !config.relative_link}) %>
   <%- partial('_partial/bgchange', null, {cache: !config.relative_link}) %>
   <%- partial('_partial/left', null, {cache: !config.relative_link}) %>

@@ -1,4 +1,5 @@
 <!-- left side bar -->
+<% if(theme.left_side_bar.enable){ %>
 <div id="RightDownBtn">
     <a id="btn" href="javascript:void(0)" target="_self" style="">
         <svg style=" width: 1.5em;height: 1.5em;" class="icon" aria-hidden="true">
@@ -127,7 +128,7 @@
                 fill="#E8E9EC"></path>
         </symbol>
     </svg>
-
+    <% if(theme.bg_music){ %>
     <a onclick="music_on();" id="musicmobbtn">
         <svg style=" width: 1.5em;height: 1.5em;" class="icon" aria-hidden="true">
             <use id="modeicon" xlink:href="#icon-icon-music">
@@ -143,6 +144,7 @@
         </svg>
     </a>
     <audio id="bg_music" src="<%= theme.bg_music%>" loop="loop"></audio>
+    <% } %>
 </div>
 
 <!-- <script src="http://www.cnjbk.cn/usr/themes/Cuteen/assets/js/Cuteen_Main.js"></script> -->
@@ -398,3 +400,4 @@
 </style>
 
 <!-- left side bar.end -->
+<% } %>
