@@ -192,7 +192,7 @@
             <i class="iconfont show-share icon-forward"></i>
           </div>
         </footer><!-- .entry-footer -->
-        <div class="tag-cloud">
+        <!-- <div class="tag-cloud">
           <div class="tag-cloud-title">
           </div>
           <div class="tag-cloud-tags">
@@ -205,7 +205,7 @@
               end_color: '#39BAE8'
               }) %>
           </div>
-        </div>
+        </div> -->
       </article>
       <!-- #post-## -->
       <div class="toc" style="background: none;"></div>
@@ -253,7 +253,7 @@
       </section>
       <!-- 加密文章隐藏评论 -->
       <section class="comment" <% if (post.encrypt == true) { %>style="display:none" <% } %>>
-        <%- partial('_partial/comment') %>
+        <%- partial('_partial/gitalk') %>
       </section>
       <!-- 加密文章隐藏作者信息 -->
       <% if(post.authorAbout && post.author){ %>
@@ -284,10 +284,14 @@
   </script>
 <% } %>
 <!--评论配置-->
-<% if (theme.valine.appId && theme.valine.appkey){ %>
-<%- partial('_partial/comment', {
+<% if (theme.valine.enable){ %>
+<%- partial('_partial/valine', {
         key: post.key,
         title: post.title,
         url: config.url+url_for(post.path)
       }) %>
+<% } %>
+
+<% if (theme.gitalk.enable){  %>
+  <%- partial('_partial/gitalk') %>
 <% } %>

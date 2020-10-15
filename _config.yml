@@ -23,8 +23,8 @@ icp:
   text: 渝ICP备19001829号 # 备案信息
 
 cdn: https://cdn.jsdelivr.net/gh/cungudafa/cdn
-pjax: 1 # 无刷新类似ajax,加速
-mathjax: 0 # 1开启,公式解析
+pjax: 0 # 无刷新类似ajax,加速
+mathjax: 1 # 1开启,公式解析
 
 #-----------------------------导航栏--------------------------------
 # 菜单导航栏
@@ -155,7 +155,7 @@ aplayer:  ##媒体播放引擎，移动端会禁止自动播放
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 valine:
-  enable: true ##打开valine评论功能true
+  enable: false ##打开valine评论功能true
   appId: U5VwYYeYlmI7C8UuoWxHrDBz-MdYXbMMI
   appKey: SFxC9o4DBWIBfhIBOTHlaXGf
   notify: false #true自带评论mail回复提醒，第三方邮件提醒就设置为false
@@ -191,6 +191,18 @@ artitalk:
     linear_gradient: rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35) 95% # 渐变规律颜色+百分比 rgb(109, 208, 242) 15%, rgb(245, 154, 190) 85%
     border_right_color: '#FFC0BE' #三角颜色
     animation: false #true打开动画渐变渲染(壁纸和动画渐变渲染建议只开一个)
+
+# 评论 
+gitalk:
+  enable: true
+  clientID: 0ef89257a5aaf8e30d52 #GitHub Application Client ID
+  clientSecret: 046080d6bfacf6607a3c48c349d945069f28ae72 #GitHub Application Client Secret
+  repo: cungudafa.github.io  #博客的仓库名称(注意不是地址)
+  owner: cungudafa #github用户名
+  admin: cungudafa
+  labels: 'gitalk' #github issue 对应的issue标签（新建一个）
+  distractionFreeMode: true #无干扰模式，不需要更改
+
 
 # 友链页信息,tips支持html语言
 mylinkinfo:
