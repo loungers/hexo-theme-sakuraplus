@@ -36,7 +36,7 @@
 - 增加了标签云页面（如果需要更多功能，后面可补充）
 - 增加了看板娘动画
 - 增加了可设置首页音乐提示
-- 增加了[不蒜子统计](http://busuanzi.ibruce.info/)、谷歌分析（`Google Analytics`）和文章字数统计等功能
+- 增加了[不蒜子统计](http://busuanzi.ibruce.info/)、谷歌分析（`Google Analytics`）和文章字数统计等功能（需要安装hexo-wordcount）
 - 优化了[自我介绍](https://www.bootcdn.cn/botui/)页面
 - 增加了自定义logo的接口
 - 增加了fancybox查看大图功能（可选）
@@ -72,7 +72,7 @@ git clone https://gitee.com/cungudafa/hexo-theme-sakuraplus.git
 
 ### 切换主题
 
-修改 Hexo 根目录下的 `_config.yml` 的  `theme` 的值：`theme: hexo-theme-sakruaplus`
+修改 Hexo 根目录下的 `_config.yml` 的  `theme` 的值：`theme: hexo-theme-sakuraplus`
 
 #### `_config.yml` 文件的其它修改建议:
 
