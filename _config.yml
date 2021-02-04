@@ -20,7 +20,7 @@ siteBuildingTime: 2020-02-11 17:20:00 # your site build time or founded date(202
 icp:
   enable: true #选择性设置
   url: http://www.beian.miit.gov.cn/state/outPortal/loginPortal.action # 备案链接
-  text: 渝ICP备19001829号 # 备案信息
+  text:  # 备案信息
 
 cdn: https://cdn.jsdelivr.net/gh/cungudafa/cdn
 pjax: 0 # 无刷新类似ajax,加速
@@ -107,7 +107,7 @@ lazyloadImg: https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/loader/orange.progres
 startdash: 
   - {url: https://gitee.com/cungudafa/hexo-theme-sakuraplus, title: SakuraPlus, desc: 本站 hexo 主题, img: /img/startdash/sakura.md.png}
   - {url: https://v.youku.com/v_show/id_XMjg5MzUyMDY3Ng==.html?refer=seo_operation.liuxiao.liux_00003303_3000_Qzu6ve_19042900, title: Youku, desc: 内在美电影, img: /img/startdash/beautyinside.jpg}
-  - {url: https://blog.csdn.net/cungudafa, title: csdn, desc: 技术栈, img: /img/startdash/cungudafa.jpg}
+  - {url: https://blog.csdn.net/cungudafa, title: csdn, desc: 技术栈, img: /img/custom/HanHyoJoo.gif}
 
 # 首页文章排序规则
 # Home page sort type: -1: newer first，1: older first.首页文章排序规则
@@ -156,8 +156,8 @@ aplayer:  ##媒体播放引擎，移动端会禁止自动播放
 # more info please open https://valine.js.org
 valine:
   enable: false ##打开valine评论功能true
-  appId: U5VwYYeYlmI7C8UuoWxHrDBz-MdYXbMMI
-  appKey: SFxC9o4DBWIBfhIBOTHlaXGf
+  appId: 
+  appKey: 
   notify: false #true自带评论mail回复提醒，第三方邮件提醒就设置为false
   verify: true #验证码
   visitor: false #统计阅读量
@@ -173,8 +173,8 @@ valine:
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://artitalk.js.org
 artitalk:
-  appID: Q2Ic8AOt42Hq6BDUijHQGiCa-MdYXbMMI
-  appKEY: jPCMGhA9sSJ9jO3bUB7IhpvH
+  appID: 
+  appKEY: 
   pageSize: 5 #每页显示说说的数量
   placeholder1: 写点啥呢 # 输入框提示语
   placeholder2: 要更新头像吗？ # 头像提示语
@@ -194,9 +194,9 @@ artitalk:
 
 # 评论 
 gitalk:
-  enable: true
-  clientID: 0ef89257a5aaf8e30d52 #GitHub Application Client ID
-  clientSecret: 046080d6bfacf6607a3c48c349d945069f28ae72 #GitHub Application Client Secret
+  enable: false
+  clientID:  #GitHub Application Client ID
+  clientSecret:  #GitHub Application Client Secret
   repo: cungudafa.github.io  #博客的仓库名称(注意不是地址)
   owner: cungudafa #github用户名
   admin: cungudafa
@@ -249,9 +249,9 @@ fancybox:
 linkcard:
   enable: false #貌似和valine刷新有点冲突 ，排查中
 
-# 是否开启字数统计 (可以在post设置no_word_count: true)
+# 需要下载hexo-worldcount是否开启字数统计 (可以在post设置no_word_count: true)
 #不需要使用，直接设置值为false，或注释掉
-word_count: true
+word_count: false
 
 # busuanzi(http://busuanzi.ibruce.info/) website statistics
 # 不蒜子(http://busuanzi.ibruce.info/) 网站统计
@@ -269,8 +269,8 @@ googleAnalytics:
 # Add baidu analytics configuration
 # 添加 baidu Analytics 配置 https://tongji.baidu.com/
 baiduAnalytics:
-  enable: true # 百度分析
-  id: b05d6287bdeab72f3886bffe3cff054a
+  enable: false # 百度分析
+  id: 
 
 # 自动生成sitemap
 sitemap:
