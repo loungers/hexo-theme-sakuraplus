@@ -1,6 +1,11 @@
 # hexo-theme-sakuraplus
 
+-----------
+ :one:  :soon: 看一看瞧一瞧，再决定做不做
+
 - 示例站：[cungudafa.top](https://cungudafa.top)   
+
+    现在看这个：[cungudafa.js.org](https://cungudafa.js.org)
 
 - 预览视频： [bilibili](https://www.bilibili.com/video/BV1C7411N762)  
 
@@ -54,8 +59,11 @@
 - 新增左侧悬浮框（回到顶部，打开左侧目录，跳转评论，黑夜模式，背景音乐播放`在config设置`）
 
 
+----------------------------
+ :two:   :fast_forward: 使用方法
 
-## 下载
+
+## 1.下载
 
 当你看到这里的时候，应该已经有一个自己的 [Hexo](https://hexo.io/zh-cn/) 博客了。如果还没有的话，不妨使用 Hexo 和 [Markdown](https://www.appinn.com/markdown/) 来写博客和文章。
 
@@ -68,13 +76,13 @@ git clone https://gitee.com/cungudafa/hexo-theme-sakuraplus.git
 ```
 
 
-## 配置
+## 2.配置
 
-### 切换主题
+### 2.1切换主题
 
 修改 Hexo 根目录下的 `_config.yml` 的  `theme` 的值：`theme: hexo-theme-sakuraplus`
 
-#### `_config.yml` 文件的其它修改建议:
+ **`_config.yml` 文件的其它修改建议** 
 
 - 请修改 `_config.yml` 的 `url` 的值为你的网站主 `URL`（如：`http://xxx.github.io`）。
 - 如果你是中文用户，则建议修改 `language` 的值为 `zh-CN`。
@@ -97,7 +105,7 @@ git clone https://gitee.com/cungudafa/hexo-theme-sakuraplus.git
 	
 	```
 
-### 新建分类 categories 页
+### 2.2新建分类 categories 页
 
 `categories` 页是用来展示所有分类的页面，如果在你的博客 `source` 目录下还没有 `categories/index.md` 文件，那么你就需要新建一个，命令如下：
 
@@ -118,7 +126,7 @@ layout: "categories"
 ---
 ```
 
-### 新建标签 tags 页
+### 2.3新建标签 tags 页
 
 `tags` 页是用来展示所有标签的页面，如果在你的博客 `source` 目录下还没有 `tags/index.md` 文件，那么你就需要新建一个，命令如下：
 
@@ -139,7 +147,7 @@ layout: "tags"
 ---
 ```
 
-### 新建关于我 about 页
+### 2.4新建关于我 about 页
 
 `about` 页是用来展示**关于我和我的博客**信息的页面，如果在你的博客 `source` 目录下还没有 `about/index.md` 文件，那么你就需要新建一个，命令如下：
 
@@ -196,7 +204,7 @@ photos: https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/banner/about.jpg
 
 ```
 
-### 新建留言板 comment 页（可选的）
+### 2.5新建留言板 comment 页（可选的）
 
 `conmment` 页是用来展示**留言板**信息的页面，如果在你的博客 `source` 目录下还没有 `conmment/index.md` 文件，那么你就需要新建一个，命令如下：
 
@@ -223,7 +231,7 @@ photos: https://gitee.com/cungudafa/source/raw/master/img/bg/hyo/3.jpg
 
 > **注**：本留言板功能依赖于第三方评论系统，请**激活**你的评论系统才有效果。
 
-### 新建友情链接 links 页（可选的）
+### 2.6新建友情链接 links 页（可选的）
 
 `links` 页是用来展示**友情链接**信息的页面，如果在你的博客 `source` 目录下还没有 `links/index.md` 文件，那么你就需要新建一个，命令如下：
 
@@ -281,9 +289,9 @@ mylinkinfo:
 
 
 
-### 菜单导航配置
+### 3.菜单导航配置
 
-#### 配置基本菜单导航的名称、路径url和图标icon.
+ **配置基本菜单导航的名称、路径url和图标icon.** 
 
 1.菜单导航名称可以是中文也可以是英文(如：`Index`或`主页`) 
 2.图标icon 可以在[Font Awesome v4](http://www.fontawesome.com.cn/faicons/) 中查找   
@@ -340,7 +348,7 @@ msocial:
 ```
 >`Tips:`注意二级菜单和图标的写法
 
-### 代码高亮
+### 4.代码高亮
 
 由于 Hexo 自带的代码高亮主题显示不好看，所以主题中使用到了 [hexo-prism-plugin](https://github.com/ele828/hexo-prism-plugin) 的 Hexo 插件来做代码高亮，安装命令如下：
 
@@ -361,7 +369,7 @@ prism_plugin:
   custom_css:
 ```
 
-### 搜索
+### 5.搜索
 
 本主题中还使用到了 [hexo-generator-json-content](https://www.npmjs.com/package/hexo-generator-json-content) 的 Hexo 插件来做内容搜索，安装命令如下：
 
@@ -369,7 +377,7 @@ prism_plugin:
 npm install hexo-generator-json-content --save
 ```
 
-### 文章字数统计插件（建议安装）
+### 6.文章字数统计插件（建议安装）
 
 如果你想要在文章中显示文章字数、阅读时长信息，可以安装 [hexo-wordcount](https://github.com/willin/hexo-wordcount)插件。
 
@@ -380,7 +388,7 @@ npm i --save hexo-wordcount
 ```
 
 
-### 添加emoji表情支持（可选的）
+### 7.添加emoji表情支持（可选的）
 
 本主题新增了对`emoji`表情的支持，使用到了 [hexo-filter-github-emojis](https://npm.taobao.org/package/hexo-filter-github-emojis) 的 Hexo 插件来支持 `emoji`表情的生成，把对应的`markdown emoji`语法（`::`,例如：`:smile:`）转变成会跳跃的`emoji`表情，安装命令如下：
 
@@ -399,7 +407,7 @@ githubEmojis:
   customEmojis:
 ```
 
-### 添加 RSS 订阅支持（可选的）
+### 8.添加 RSS 订阅支持（可选的）
 
 本主题中还使用到了 [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed) 的 Hexo 插件来做 `RSS`，安装命令如下：
 
@@ -423,7 +431,7 @@ feed:
 
 执行 `hexo clean && hexo g` 重新生成博客文件，然后在 `public` 文件夹中即可看到 `atom.xml` 文件，说明你已经安装成功了。
 
-### 添加 [DaoVoice](http://www.daovoice.io/) 在线聊天功能（可选的）
+### 9.添加 [DaoVoice](http://www.daovoice.io/) 在线聊天功能（可选的）
 
 前往 [DaoVoice](http://www.daovoice.io/) 官网注册并且获取 `app_id`，并将 `app_id` 填入主题的 `_config.yml` 文件中。
 ```yaml
@@ -433,7 +441,7 @@ daovoice:
   app_id: f6b2a0b1 ##这里替换成你DaoVoice上的appid
 ```
 
-### 在线发布说说页面
+### 10.在线发布说说页面
 根据官网教程配置[artitalk.js.org](https://artitalk.js.org)，本主题融合了自定义配置背景的功能，具体可以参考[个性定制教程](https://cungudafa.blog.csdn.net/article/details/106224223)。
 
 ```yaml
@@ -460,11 +468,11 @@ artitalk:
     animation: false #true打开动画渐变渲染(壁纸和动画渐变渲染建议只开一个)
 ```
 >根据你的爱好修改字体颜色，背景，动画等。
-### 修改页脚
+### 11.修改页脚
 
 页脚信息可能需要做定制化修改，而且它不便于做成配置信息，所以可能需要你自己去再修改和加工。修改的地方在主题文件的 `/layout/_partial/footer.ejs` 文件中，包括站点、使用的主题、访问量等。
 
-### 修改打赏的二维码图片
+### 12.修改打赏的二维码图片
 在主题config里面可以修改路径，你可以替换成你的的微信和支付宝的打赏二维码图片。
 ```yaml
 donate:
@@ -501,7 +509,7 @@ photos: https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/banner/donate.jpg
 在主题文件的 `themes\sakura\layout\donate.ejs` 文件中，可以增加更多的打赏方式。
 
 
-### 配置视频、音乐播放器（可选的）
+### 13.配置视频、音乐播放器（可选的）
 
 要支持音乐播放，在主题的 `_config.yml` 配置文件中激活music配置即可：
 
@@ -526,7 +534,7 @@ aplayer:  ##媒体播放引擎，移动端会禁止自动播放
   volume: 0.7 ##默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
   mutex: true ##互斥，阻止多个播放器同时播放
 ```
-### 评论
+### 14.评论
 根据官网的配置教程，严格配置：[valine.js.org](https://valine.js.org)
 ```yaml
 # Valine ##极简留言功能
@@ -548,7 +556,7 @@ valine:
   background: https://gitee.com/cungudafa/source/raw/master/img/gif/Sitich/Sitich2.gif
 ```
 
-### 文章分析
+### 15.文章分析
 
 日历页面（在归档页面下方，可选择性开启），文章分析页面（选择性开启，若关闭，请在菜单栏中删除即可）
 
@@ -558,9 +566,12 @@ valine:
 postCalendar: true 
 ```
 
-## 文章 Front-matter 介绍
+-----------
+ :three:  :loudspeaker: hexo特性设置及文章撰写
 
-### Front-matter 选项详解
+## 1.文章 Front-matter 介绍
+
+ **Front-matter 选项详解** 
 
 `Front-matter` 选项中的所有内容均为**非必填**的。但我仍然建议至少填写 `title` 和 `date` 的值。
 
@@ -589,7 +600,7 @@ description| 默认取文章前40个字 | 一句话描述摘要
 
 以下为文章的 `Front-matter` 示例。
 
-### 最简示例
+ **最简示例** 
 
 ```yaml
 ---
@@ -598,7 +609,7 @@ date: 2020-05-20 09:25:00
 ---
 ```
 
-### 最全示例
+ **最全示例** 
 
 ```yaml
 ---
@@ -619,7 +630,7 @@ abbrlink: ccbf
 date: 2020-03-02 13:59:10
 ---
 ```
-### 文章统计
+### 2.文章统计
 在本主题的 `_config.yml` 中可以修改部分自定义信息，有以下几个部分：
 
 代码块是否可复制、图片大图查看功能、知乎外链样式、文章字数统计等。
@@ -659,7 +670,7 @@ busuanziStatistics:
   totalTraffic: true # 总访问量
   totalNumberOfvisitors: true # 总人次
 ```
-### 五星评分
+### 3.五星评分
 需要在 [widgetpack.com](https://widgetpack.com)注册申请，
 ```yaml
 # widgetpack 星星评分
@@ -669,7 +680,11 @@ widgetpack:
   id: 23889 #<app_id>
   color: fc6423
 ```
-### 天气
+
+------
+ :hibiscus: 其他花里胡哨
+
+### 16.天气
 需要在官网[weatherdt.com](http://weatherdt.com/)注册配置，具体[天气教程](https://blog.csdn.net/cungudafa/article/details/104312892)。
 
 ```yaml
@@ -681,7 +696,8 @@ weather:
 >更多：
 >1. 豆瓣页面：[豆瓣读书和电影](https://cungudafa.blog.csdn.net/article/details/105773983)
 >2. 访问者地图：[访问者地图](https://cungudafa.blog.csdn.net/article/details/105925710)
-### 文章分析
+
+### 17.文章分析
 包括[百度分析](https://tongji.baidu.com/)和谷歌分析，都需要去注册申请。（可选操作）
 ```yaml
 # Add google analytics configuration
@@ -697,14 +713,14 @@ baiduAnalytics:
   id: b05d6287bdeab72f3886bffe3cff054a
 ```
 
-## 效果预览
+ **效果预览** 
 
 示例站：[cungudafa.top](https://cungudafa.top)
 
 视频：[bilibili](https://www.bilibili.com/video/BV1C7411N762)
 
 
-## 自定制修改
+## 18.自定制修改
 背景和一些常用的优化，在主题配置文件中都以可选配置了（防止动画冲突，建议背景和点击效果只打开一个），
 如果更多有新的样式，可以留言或者pr，酌情添加。
 ```yaml
@@ -729,30 +745,42 @@ js:
 >3. [今日诗词、一言接口](https://blog.csdn.net/cungudafa/article/details/104651901)
 
 
+
+------
+ :new_moon_with_face: 总结时间
+
 ## 参与贡献
-- @[cungudafa](https://gitee.com/cungudafa)
+ @[cungudafa](https://gitee.com/cungudafa)
 
 
 
 
 ## 更新日志
-- 6.9
+**2.4** 
+
+文字总数统计wordcount修改为非必要选项，可以不展示文字统计总字数
+
+**9.8 & 10.15** 
+
+更新了valine和artitalk，添加了gitalk评论作为选择
+
+**6.9** 
 
 补充粘贴复制（[教程](https://blog.csdn.net/cungudafa/article/details/106647255)）
 
-- 6.2
+**6.2**
 
 修复代码块样式（删掉`npm uninstall hexo-prism-plugin`插件）
 新增左侧悬浮框（回到顶部，打开左侧目录`小屏幕生效，否则只显示顶部目录`，跳转评论，黑夜模式，背景音乐播放`在config设置bg_music`）
 
-- 5.28
+**5.28**
 
 修复了[css](https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/style.css )（首页bug）
 修改了post文章引用样式（以前的不明显）
 增加了post文章图片样式（增加阴影）、段落h12345增加阿拉伯编号
 添加了tags页面多种词云效果
 
-- 5.25 
+**5.25**
 
 修复了没有设置文章时首页显示404图片，（bg中随机选择）
 新增了分析页面（echarts图），来源于drew整理matery主题的效果
@@ -760,11 +788,11 @@ js:
 新增标题下显示浏览数
 新增自动获取前50字为文章描述
 
-- 5.23 
+**5.23**
 
 计划修改文章页面展现效果（对代码块和表格图片展现更加优化）
 
-- 5.22 
+**5.22**
 
 重铸
 
